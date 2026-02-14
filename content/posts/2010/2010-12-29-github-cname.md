@@ -7,9 +7,7 @@ title: Github Page 绑定域名
 
 创建一个CNAME文件，内容是你的域名，如：
 
-<code>
-xlau.org
-</code>
+    xlau.org
 
 然后把此文件添加到Github仓库，上传到Github。Github服务器会设置`xlau.org`为你的主域名，然后将`www.xlau.org`和`kylexlau.github.com`重定向到`xlau.org`。
 

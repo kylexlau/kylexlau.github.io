@@ -29,7 +29,7 @@ title: 像黑客一样写博客
 
 首先看 [index.html](http://github.com/mojombo/tpw/tree/master/index.html). 这是网站的首页。此文件的最上面几行是一段包含文件元数据的YAML代码。这些元数据告诉Jekyll，此文件该使用什么模板，页面的标题该是什么，等等。此文件里，我指定使用default模板。模板文件都在 [_layouts](http://github.com/mojombo/tpw/tree/master/_layouts) 文件夹里。如果你打开 [default.html]http://github.com/mojombo/tpw/tree/master/_layouts/default.html) 文件，将看到主页是由index.html包裹在此模板中而生成的。
 
-你同样将注意到这些文件里有Liquid模版引擎代码。Liquid是一种简单的，可扩展的模版语言，它令数据更容易嵌入到模版里。我希望在我的主页上显示我的文章列表。Jekyll生成一个散列表（Hash),包含关于我网站的各种数据。<code>site.posts</code>是我所有博客文章的一个按时间由近及远顺序的列表。每篇文章，又包含几个字段，如标题（title）和时间（date）。
+你同样将注意到这些文件里有Liquid模版引擎代码。Liquid是一种简单的，可扩展的模版语言，它令数据更容易嵌入到模版里。我希望在我的主页上显示我的文章列表。Jekyll生成一个散列表（Hash),包含关于我网站的各种数据。`site.posts`是我所有博客文章的一个按时间由近及远顺序的列表。每篇文章，又包含几个字段，如标题（title）和时间（date）。
 
 Jekyll解析（parsing）在`_posts`目录中的文件，以获取博客文章的列表。每篇文章文件标题里包括有，最终生成静态HTML文件的发布日期和略缩名（slug，出现在URL中的名字）。打开本文的源码， [2008-11-17-blogging-like-a-hacker.textile](http://github.com/mojombo/tpw/tree/master/_posts/2008-11-17-blogging-like-a-hacker.textile). GitHub默认会转换textile文件，为了更好的理解，请打开文件的 [原始形式](http://github.com/mojombo/tpw/tree/master/_posts/2008-11-17-blogging-like-a-hacker.textile?raw=true). 文件里我指定了使用`post`模版。如果你打开 [post.html](http://github.com/mojombo/tpw/blob/03fa4247b2f4ba620661d9025c336f167aa11ba2/_layouts/post.html) 文件，会发现这里有一个嵌套模版的例子。模版里可以包含其他模版，这使你有更大的灵活性去指定页面显示。我用嵌套模版，是为了显示相关文章。
 
@@ -39,10 +39,10 @@ Jekyll用一种特殊的方式处理文章源文件。文件名中指定的日�
 
 为了将你的原始网站转换到静态网页版本，只需在命令行中输入：
 
-<pre class="terminal"><code>$ jekyll /path/to/raw/site /path/to/place/generated/site</code></pre>
+    $ jekyll /path/to/raw/site /path/to/place/generated/site
 
 Jekyll仍然是一个非常年轻的项目。我仅仅开发出我所需要的那些功能。我希望这个项目能慢慢成熟起来，支持更多的功能。如果你用Jekyll搭建了你的博客，请发邮件告诉我，在Jekyll未来的版本里你需要些什么功能。更好的方法是，在GitHub上克隆（fork）这个项目，然后修改（hack），加上你自己需要的功能。
 
 我已经使用Jekyll超过1个月了。我爱它。非常有益的是，驱使我开发Jekyll的动力源自我自己博客的需要。我能在TextMate里编辑我的文章，它支持自动拼写检查。我能随时修改CSS和页面模版。所有东西备份在GitHub上。写这篇文章时，我感觉很轻松。系统简单到我能控制整个的转换过程。我脑海和我博客间的距离缩短了。我想它会让我成为一个更好的博客作者。
 
-<code>--EOF--</code>
+`--EOF--`
