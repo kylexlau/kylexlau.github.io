@@ -1,4 +1,4 @@
-baseURL = 'https://kylexlau.github.io/'
+baseURL = 'https://blog.xlau.uk/'
 languageCode = 'en-us'
 title = "Kylexlau's Weblog"
 theme = 'typo'
