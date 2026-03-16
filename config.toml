@@ -38,9 +38,9 @@ listDateFormat = '2 Jan 2006'
 breadcrumbs = true
 
 # Social icons
-#[[params.social]]
-#name = "linkedin"
-#url = "https://www.linkedin.com/in/user/"
+[[params.social]]
+name = "email"
+url = "mailto:hi@xlau.uk"
 
 [[params.social]]
 name = "twitter"
