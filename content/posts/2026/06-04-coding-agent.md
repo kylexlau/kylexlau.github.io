@@ -1,7 +1,7 @@
 ---
 title: "Coding Agents"
 date: "2026-06-04"
-toc: true
+toc: false
 autonumber: true
 readTime: false
 draft: false
