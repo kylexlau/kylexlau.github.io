@@ -50,7 +50,7 @@ hugo --gc --minify --environment production
 - `themes/typo/layouts/_default/home.html` renders the intro block and the social icon row.
 - The Typo theme already contains SVG support for `email`, `twitter`, and `github`.
 - `build.sh` is the Cloudflare-oriented build entrypoint and installs Hugo, Go, Dart Sass, and Node.js before running `hugo build --gc --minify`.
-- `.github/workflows/hugo.yaml` is still present for GitHub Pages deployment and currently pins Hugo `0.134.2`.
+- `.github/workflows/hugo.yaml` now builds and deploys static redirect HTML pages (`index.html` and `404.html`) on GitHub Pages that redirect `kylexlau.github.io` traffic to `https://blog.xlau.uk/`.
 
 ## Editing Guidance
 
